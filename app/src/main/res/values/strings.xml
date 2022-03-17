@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Проверка знаний</string>
+    <string name="title">Переводчик едениц длинны</string>
+    <string name="km">киллометров</string>
+    <string name="m">метров</string>
+    <string name="dm">дециметров</string>
+    <string name="sm">сантиметров</string>
+    <string name="mm">миллиметр</string>
+    <string name="inspect">Проверить</string>
+</resources>
