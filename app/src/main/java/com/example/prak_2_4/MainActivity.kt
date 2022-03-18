@@ -9,6 +9,7 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 
+private var clickCounter: Int = 255
 
 @Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
@@ -40,6 +41,13 @@ class MainActivity : AppCompatActivity() {
                 rez.text = "Повторите материал, ответ неверный!"
                 rez.setTextColor(resources.getColor(R.color.red))
                 rezImage.setImageResource(R.drawable.bad)
+            }
+        }
+        rezImage.setOnClickListener {
+            rezImage.setAlpha(clickCounter)
+            clickCounter -= 25
+            if (clickCounter <= 0) {
+                clickCounter = 255
             }
         }
     }
